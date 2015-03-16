@@ -15,6 +15,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //Verify that your application is "debuggable" in your manifest or build.gradle file.
+            debug {
+                debuggable true
+            }
         }
     }
 }
